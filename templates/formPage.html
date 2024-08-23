@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Arrival Form</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/formstyle.css">
+</head>
+<body>
+<div id="formPage" class="page roboto-thin">
+    <div class="container"> 
+        <center><h1>Book Ride</h2></center>
+        <form id="arrivalForm" action="{{ url_for('submit_form') }}" method="POST">
+                <label>Email Id</label>
+                <input class="form-input" type="text" name="email_id" placeholder="john@gmail.com"  required><br>
+                <br>
+
+                <label>Pickup Point</label>
+                <input class="form-input" type="text" name="pickup_point" placeholder="Where will you be?"  required><br>
+                <br>
+
+                <label>Drop-off Location</label>
+                <input class="form-input" type="text" name="destination_point" placeholder="Where are you heading?"  required><br>
+                <br>
+
+                <label>Departure Date</label>
+                <input class="form-input" type="date" name="departure_date" placeholder="When would you leave?"  required><br>
+                <br>    
+
+                <label>Departure Time</label>
+                <input class="form-input" type="time" name="departure_time" placeholder="What time?"  required><br>
+                <br>
+                
+                <label>No. of passengers</label>
+                <input class="form-input" type="number" name="no_of_passengers" min="1" max="20" placeholder="Total no of passengers" required><br>
+                <br>
+                
+                <input type="submit" class="myButton" value="submit">
+        </form>
+        <!-- <a href="#savedData" onclick="showPage('savedData')">View Saved Data</a> -->
+    </div>  
+</div>
+
+<!-- <div id="savedData" class="page">
+    <div class="container">
+        <h2>Saved Data</h2> 
+        <div id="savedInfo"></div>
+        <a href="#formPage" onclick="showPage('formPage')">Back to Form</a>
+    </div>
+</div> -->
+
+<script src="form.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 2;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-button {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .social-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .facebook {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .youtube {
+    background-color: #FF0000;
+    color: white;
+  }
+  

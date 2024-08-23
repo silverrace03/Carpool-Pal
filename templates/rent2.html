@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Arrival Form</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/formstyle.css">
+</head>
+<body>
+<div id="formPage" class="page roboto-thin">
+    <div class="container"> 
+        <center><h2>Rental Details</h2></center>
+        <form id="arrivalForm">
+
+            <label for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="email_id" placeholder="Enter your name?"  required><br>
+                <br>
+
+                <label for="phone">Phone No.</label>
+                <input id="phone" class="form-input" type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone no.?"  required><br>
+                <br>
+
+                
+
+                <label for="license">Driver License</label>
+                <input class="form-input" type="tel" id="license" name="phone" pattern="[0-9]{15}" placeholder="Enter your Driver License no.?"  required><br>
+                <br>
+                
+
+
+                <label for="email">Email Id</label>
+                <input class="form-input" type="text" id="email" name="email_id" placeholder="john@gmail.com"  required><br>
+                <br>
+
+                <label for="pickup">Pickup Point</label>
+                <input class="form-input" type="text" id="pickup" name="pickup_point" placeholder="Where will you be?"  required><br>
+                <br>
+
+                <label for="dropOff">Drop-off Location</label>
+                <input class="form-input" type="text" id="dropOff" name="destination_point" placeholder="Where are you heading?"  required><br>
+                <br>
+
+                <label for="start">Rental Start Date</label>
+                <input class="form-input" type="date" id="start" name="departure_date" placeholder="When would you leave?"  required><br>
+                <br>    
+
+                <!-- <label>Departure Time</label>
+                <input class="form-input" type="time" name="departure_time" placeholder="What time?"  required><br>
+                <br> -->
+
+                <label for="end">Rental End Date</label>
+                <input class="form-input" type="date" id="end" name="departure_date" placeholder="When would you leave?"  required><br>
+                <br>  
+                
+                <!-- <label>No. of passengers</label>
+                <input class="form-input" type="number" name="no_of_passengers" min="1" max="20" placeholder="Total no of passengers" required><br>
+                <br> -->
+                
+                <input type="submit" class="myButton" value="submit">
+        </form>
+        <a href="#savedData" onclick="showPage('savedData')">View Saved Data</a>
+    </div>  
+</div>
+
+<div id="savedData" class="page">
+    <div class="container">
+        <h2>Saved Data</h2> 
+        <div id="savedInfo"></div>
+        <a href="#formPage" onclick="showPage('formPage')">Back to Form</a>
+    </div>
+</div>
+                
+
+<script src="../static/js/rent2.js"></script>
+
+</body>
+</html>
